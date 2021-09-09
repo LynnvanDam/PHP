@@ -7,7 +7,6 @@ function deelbaarDoorDrie($a) {
     else {
         return "false";
     }
-    echo $a;
 }
 
-echo deelbaarDoorDrie(11);
+echo deelbaarDoorDrie(12);
