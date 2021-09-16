@@ -1,3 +1,7 @@
 <?php
 
-echo $_POST['wachtwoord'];
+echo $_POST['inlognaam'];
+    echo "<br>";
+echo $_POST['adres'];
+    echo "<br>";
+echo $_POST['email'];
