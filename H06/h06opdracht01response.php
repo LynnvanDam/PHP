@@ -48,13 +48,6 @@ while ($row = $stmt->fetch()) {
     echo "</tr>";
 }
 
-
-
-
-// $row = $stmt->fetch() or die("Error 3.");
-// echo $row['roepnaam'];
-
-
 ?>
 
 </table>
