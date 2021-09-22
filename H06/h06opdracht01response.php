@@ -16,7 +16,6 @@
 <body>
 
 <table>
-
 <?php
 
 $servername = "localhost";
@@ -49,7 +48,6 @@ while ($row = $stmt->fetch()) {
 }
 
 ?>
-
 </table>
 
 </body>
