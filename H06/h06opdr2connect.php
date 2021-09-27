@@ -1,9 +1,9 @@
 <?php
 
 $servername = "localhost";
-$dbname = "phpschool";
-$username = "root";
-$password = "";
+$dbname = "id17545548_phpschool";
+$username = "id17545548_root";
+$password = "b$?|v*YpEt?98|AL";
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 if (mysqli_connect_errno()) {

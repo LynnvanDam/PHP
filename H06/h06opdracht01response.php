@@ -19,9 +19,9 @@
 <?php
 
 $servername = "localhost";
-$dbname = "phpschool";
-$username = "root";
-$password = "";
+$dbname = "id17545548_phpschool";
+$username = "id17545548_root";
+$password = "b$?|v*YpEt?98|AL";
 
 try {  $conn = new PDO("mysql:host={$servername};dbname={$dbname}", $username, $password);
 } catch(PDOException $e) {
