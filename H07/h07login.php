@@ -2,16 +2,23 @@
 session_start();
 
 $users = array(
-    "Lynn" => "1717",
-    "Rianne" => "1616",
-    "Raph" => "4004",
+    "Lynn" => array("password" => "1717", "rol" => "Administrator"),
+    "Rianne" => array("password" => "1616", "rol" => "Gebruiker"),
+    "Raph" => array("password" => "4004", "rol" => "Administrator"),
 );
 
-if (isset($_POST['button'])
-            && isset($users[$_POST['username']])
-            && $users[$_POST['username']] == $_POST['password']) {
-    $_SESSION['user'] = $_POST['username'];
-    $message = "Welkom ".$_SESSION['user'];
+if (isset($_GET["loguit"])) {
+    $_SESSION = array();
+    session_destroy();
+}
+if (isset($_POST["button"])
+            && isset($users[$_POST["username"]])
+            && $users[$_POST["username"]] ["password"] == $_POST["password"]) {
+    $_SESSION["user"] = array("naam" => $_POST["username"],
+                              "password" => $users[$_POST["username"]] ["password"],
+                              "rol" => $users[$_POST["username"]] ["rol"]);
+    $message = "Welkom ".$_SESSION["user"] ["naam"]." met de rol "
+                        .$_SESSION["user"] ["rol"];
 }   else {
     $message = "inloggen";
 }
@@ -30,6 +37,10 @@ if (isset($_POST['button'])
 </form>
 
 <a href="h07website.php">website</a>
+<br>
+<a href="h07login.php?loguit">uitloggen</a>
+<br>
+<a href="h07admin.php">Admin</a>
 
 </body>
 </html>
