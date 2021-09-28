@@ -40,7 +40,7 @@ if (isset($_POST["button"])
 <br>
 <a href="h07login.php?loguit">uitloggen</a>
 <br>
-<a href="h07admin.php">Admin</a>
+<a href="h07admin.php">admin site</a>
 
 </body>
 </html>
