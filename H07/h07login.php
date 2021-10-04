@@ -4,7 +4,7 @@ session_start();
 $users = array(
     "Lynn" => array("password" => "1717", "role" => "Administrator"),
     "Rianne" => array("password" => "1616", "role" => "User"),
-    "Raph" => array("password" => "4004", "role" => "Administrator"),
+    "Raphaël" => array("password" => "4004", "role" => "Administrator"),
 );
 
 if (isset($_GET["loguit"])) {

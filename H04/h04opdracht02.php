@@ -9,4 +9,4 @@ function deelbaarDoorDrie($a) {
     }
 }
 
-echo deelbaarDoorDrie(12);
+echo deelbaarDoorDrie($_POST['getal']);

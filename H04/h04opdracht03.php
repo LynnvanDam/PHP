@@ -9,4 +9,4 @@ function reverse($a) {
     return $b;
 }
 
-echo reverse("ereht olleh");
+echo reverse($_POST['zin']);
